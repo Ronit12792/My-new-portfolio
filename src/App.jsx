@@ -8,21 +8,21 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SplashCursor from './components/SplashCursor';
-import Galaxy from './components/Galaxy';
-import './components/Galaxy.css'; // Make sure you import the CSS
+// import Galaxy from './components/Galaxy';
+//import './components/Galaxy.css'; // Make sure you import the CSS
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden relative">
       {/* Galaxy background */}
-      <Galaxy
+      {/* <Galaxy
         mouseRepulsion={true}
         mouseInteraction={true}
-        density={1.5}
+        density={0.2}
         glowIntensity={0.5}
         saturation={0.8}
         hueShift={240}
-      />
+      /> */}
 
       {/* Main content */}
       <Navbar />

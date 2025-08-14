@@ -11,27 +11,32 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['JavaScript', 'Java', 'HTML', 'CSS', 'Python'],
+      skills: ['JavaScript', 'TypeScript', 'Java', 'Python', 'HTML', 'CSS'],
       color: 'from-royal-blue-500 to-royal-blue-600'
     },
     {
       title: 'Frameworks & Libraries',
-      skills: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'jQuery',],
+      skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'jQuery'],
       color: 'from-teal-500 to-teal-600'
     },
     {
-      title: 'Tools & Platforms',
-      skills: ['Git', 'GitHub', 'Firebase', 'VS Code'],
-      color: 'from-purple-500 to-purple-600'
-    },
-    {
-      title: 'Databases',
-      skills: ['MongoDB', 'SQL','AWS'],
+      title: 'Databases & Cloud',
+      skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase', 'AWS (EC2, Lambda, S3, RDS)'],
       color: 'from-emerald-500 to-emerald-600'
     },
     {
+      title: 'AI & Machine Learning',
+      skills: ['TensorFlow', 'PyTorch', 'OpenAI / Gemini API', 'NLP / Computer Vision basics'],
+      color: 'from-pink-500 to-pink-600'
+    },
+    {
+      title: 'Tools & Platforms',
+      skills: ['Git', 'GitHub', 'Docker', 'VS Code', 'Postman', 'Figma'],
+      color: 'from-purple-500 to-purple-600'
+    },
+    {
       title: 'Other Technologies',
-      skills: ['REST APIs', 'JWT Authentication', 'Agile Methodology'],
+      skills: ['REST APIs', 'JWT Authentication', 'OAuth', 'WebSockets / Socket.io', 'Agile / Scrum', 'Serverless Architecture'],
       color: 'from-orange-500 to-orange-600'
     }
   ];
@@ -51,7 +56,7 @@ const Skills = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-royal-blue-500 to-teal-500 mx-auto mb-6"></div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Here are the technologies and tools I work with to bring ideas to life
+            Here are the technologies, tools, and cloud & AI skills I work with to bring ideas to life
           </p>
         </motion.div>
 
@@ -99,7 +104,7 @@ const Skills = () => {
           {[
             { label: 'Lines of Code', value: '20K+' },
             { label: 'Projects Completed', value: '12+' },
-            { label: 'Technologies Mastered', value: '15+' },
+            { label: 'Technologies Mastered', value: '20+' },
             { label: 'Years Experience', value: '1+' }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center glass-morphism p-6 rounded-xl">

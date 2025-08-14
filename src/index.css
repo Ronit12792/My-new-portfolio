@@ -54,3 +54,6 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-royal-blue-500;
 }
+.lucide-chevron-down {
+  display: none;
+}

@@ -70,7 +70,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="glass-morphism p-4 rounded-lg">
                 <h4 className="text-teal-400 font-semibold mb-2">Experience</h4>
-                <p className="text-gray-300">1+ Years</p>
+                <p className="text-gray-300">1+ Years (Academics)</p>
               </div>
               <div className="glass-morphism p-4 rounded-lg">
                 <h4 className="text-teal-400 font-semibold mb-2">Projects</h4>

@@ -1,4 +1,4 @@
-.galaxy-container {
+/* .galaxy-container {
   position: fixed; /* Covers screen even when scrolling */
   top: 0;
   left: 0;
@@ -7,4 +7,4 @@
   overflow: hidden;
   pointer-events: none; /* So you can still click buttons */
   z-index: 0; /* Keeps it behind other content */
-}
+} */
