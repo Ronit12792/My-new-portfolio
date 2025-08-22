@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Zap, Database, Shield, Brain } from 'lucide-react';
+import { ExternalLink, Github, Zap, Database, Shield, Brain, MessageSquare } from 'lucide-react';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -49,6 +49,16 @@ const Projects = () => {
       githubLink: 'https://github.com/Ronit12792/mental-health',
       icon: <Shield className="w-6 h-6" />,
       color: 'from-sky-500 to-sky-600'
+    },
+    {
+      title: 'Chatbot Flow Builder',
+      description: 'A visual chatbot flow builder built with React.js, React Flow, and Tailwind CSS, allowing users to create, connect, and manage chatbot message nodes with a clean drag-and-drop interface.',
+      image: 'https://img-wrapper.vercel.app/image?url=https://placehold.co/600x400/14B8A6/FFFFFF?text=Chatbot+Flow+Builder',
+      tech: ['React.js', 'React Flow', 'Tailwind CSS'],
+      demoLink: 'https://chatbotflow2.vercel.app/',
+      githubLink: 'https://github.com/Ronit12792/chatbotflow2.git', // change to your repo if different
+      icon: <MessageSquare className="w-6 h-6" />,
+      color: 'from-teal-500 to-teal-600'
     }
   ];
 
@@ -118,6 +128,8 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <motion.a
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center gap-2 bg-gradient-to-r from-royal-blue-600 to-royal-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium btn-glow transition-all duration-300"
@@ -128,6 +140,8 @@ const Projects = () => {
                   
                   <motion.a
                     href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center gap-2 glass-morphism text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
